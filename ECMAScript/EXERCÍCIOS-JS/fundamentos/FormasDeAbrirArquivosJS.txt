@@ -1,0 +1,11 @@
+Formas de abrir arquivos do Javascript - JS
+
+Online:
+repl.it
+jsfiddle.net
+
+Offline:
+IDE VScode4
+console do browser
+
+

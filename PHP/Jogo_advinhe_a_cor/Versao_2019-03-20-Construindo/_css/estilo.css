@@ -1,0 +1,43 @@
+html {
+    font: 15pt Arial;
+}
+
+body {
+    background: url("../images/back.jpg") no-repeat top center fixed;
+    background-size: cover;
+}
+
+div#cont {
+    background-color: rgba(255, 255, 255, 0.850);
+    margin: 100px auto 100px auto;
+    padding: 30px;
+    width: 550px;
+    min-height: 300px;
+    line-height: 25px;
+    border-radius: 10px;
+    //box-shadow: -5px -5px 20px darkblue, 5px 5px 20px darkblue;
+}
+
+a {
+    color: #273747;
+    text-decoration: none;
+    font-weight: bold;
+    font: 11pt Helvetica;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+span.foco {
+    font-weight: bold;
+    color: #7e050c;
+}
+
+.botao {
+    background-color: #273747;
+    color: white;
+    padding: 8px;
+    -webkit-box-shadow: 2px 2px 1px #aaaaaa;
+    box-shadow: 2px 2px 1px #aaaaaa;
+}

@@ -1,0 +1,2 @@
+Para verificar qual é o tipo da variável utilizar TYPEOF
+console.log(typeof variável)

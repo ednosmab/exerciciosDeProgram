@@ -1,0 +1,17 @@
+Ao inserir um valor numérico, o javascript identifica 1.0 não sendo um ponto flutuante, mas sim como um valor do tipo Inteiro
+
+Ao alterar para 1.1 ele reconhecer como ponto flutuante
+
+Para atriuir um valor convertido por alguma função deve-se alterar a variável Constante para Variável
+
+De
+const media = total / (peso1 + peso2)
+console.log(media.toFixed(2))
+
+Para
+var media = total / (peso1 + peso2) 
+var media = media.toFixed(2)
+console.log(media)
+
+Obterá o mesmo resultado, porém a variável média já terá sofrido essa alteração em sua inserção
+
