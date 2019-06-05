@@ -1,7 +1,8 @@
  <?php
- if(empty($cpf)) {
-        return false;
-    }
+ function validaCPF(){
+    if(empty($cpf)) {
+            return false;
+        }
  
     $cpf = preg_match('/[0-9]/', $cpf)?$cpf:0;
 
@@ -40,4 +41,5 @@
  
         return true;
     }
+ }
 ?>

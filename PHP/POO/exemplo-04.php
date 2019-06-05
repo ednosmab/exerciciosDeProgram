@@ -11,15 +11,14 @@
             $this->cidade = $cid;
         }
 
-        public function __destruct()
-        {
-            var_dump("Destruir");
-        }
-
         public function __toString(){
             return $this->logradouro.", ".$this->numero." - ".$this->cidade;
         }
 
+        public function __destruct()
+        {
+            var_dump("Destruir");
+        }
     }
 
     //Método Construtor
