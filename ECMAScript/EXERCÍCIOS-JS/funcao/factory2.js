@@ -7,3 +7,4 @@ function criarProduto(nome, preco){
 }
 
 console.log(criarProduto('Notebook', 2199.49))
+
