@@ -34,7 +34,7 @@
         private function setTocando($t){
             $this->tocando = $t;
         }
-        ///////
+        //Métodos da interface
         public function ligar(){
             $this->setLigado(true);
         }

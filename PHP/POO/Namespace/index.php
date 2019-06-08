@@ -1,0 +1,13 @@
+<?php
+    require_once("config.php");
+    
+    use Cliente\Cadastro;
+
+    $cad = new Cadastro();
+    $cad->setNome("Djalma Sindeaux");
+    $cad->setEmail("djalma@hcode.com.br");
+    $cad->setSenha("78787878");
+    $cad->registrarVenda();
+    
+    echo $cad;
+?>
