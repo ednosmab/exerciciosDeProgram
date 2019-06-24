@@ -1,5 +1,5 @@
 //Cadeia de protótipos (prototype chain)
-Object.prototype.attr0 = 'ABCD'
+Object.prototype.attr0 = 'ABCD' //Não faça isso, por impactar o padrão da cadeia de hierarquia
 const avo = {attr1: 'A'}
 const pai = {__proto__: avo, attr2: 'B', attr3: 'Valor do pai'}
 const filho = {__proto__: pai, attr3: 'C'}//(Sombreamento, Sobreposição) attr3 já consta em seu próprio 
@@ -18,7 +18,7 @@ const carro = {
         }
     },
     status(){
-        return `${this.velAtual}Km/h`
+        return `${this.velAtual}Km/h de ${this.velMax}Km/h`
     }
 }
 
@@ -39,5 +39,9 @@ Object.setPrototypeOf(ferrari, carro)//Estabelece relação de ferrari herdando 
 Object.setPrototypeOf(volvo, carro)
 console.log(ferrari)
 console.log(volvo)
+
 volvo.acelerar(100)
 console.log(volvo.status())
+
+ferrari.acelerar(300)
+console.log(ferrari.status())//324Km/h é uma sobreposição do prototipo carro
