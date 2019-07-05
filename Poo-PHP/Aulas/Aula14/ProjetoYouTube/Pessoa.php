@@ -3,8 +3,12 @@
         protected $nome;
         protected $idade;
         protected $experiencia;
-        abstract function ganharExp();
-
+        
+        public function __construct($n, $i){
+            $this->nome = $n;
+            $this->idade = $i;
+            $this->experiencia = 0;
+        }
         public function getNome(){
             return $this->nome;
         }
@@ -24,6 +28,10 @@
         public function  setExperiencia($exp){
             $this->experiencia = $exp;
         }
-    }
 
+        public function ganharExp($n){
+            $this->experiencia += $n;
+        }
+    }
+    
 ?>

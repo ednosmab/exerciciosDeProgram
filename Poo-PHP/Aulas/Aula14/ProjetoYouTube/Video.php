@@ -1,5 +1,5 @@
 <?php
-    require_once "Acoes.php";
+    require_once "config.php";
     class Video implements AcoesVideo{
         private $titulo;
         private $avaliacao;
@@ -39,6 +39,13 @@
             $this->reproduzinho = $r;
         }
 
+        public function __construct($t){
+            $this->titulo = $t;
+            $this->avaliacao = 1;
+            $this->views = 0;
+            $this->curtidas = 0;
+            $this->reproduzinho = false;
+        }
         public function play(){
 
         }
