@@ -24,6 +24,16 @@
             print_r($g);
             echo "<pre>";
 
+            $vis[0] = new Visualizacao($g[1], $v[0]);//Maria assite Aula de POO
+            $vis[1] = new Visualizacao($g[1], $v[1]);//Maria assite Aula de PHP
+            $vis[2] = new Visualizacao($g[0], $v[1]);//Edson assite Aula de PHP
+
+            $vis[0]->avaliar();
+            $vis[1]->avaliarP(85);
+            echo "<pre>";
+            print_r($vis);
+            echo "</pre>";
+
         ?>
     </div>
 </body>
